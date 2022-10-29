@@ -1,0 +1,116 @@
+body{
+	background-image: url(https://images7.alphacoders.com/374/374658.jpg);
+	font-family: Arial;          
+}
+
+.h1-zag{
+	text-align:center;
+	display:block;
+	margin:auto;
+	background-color:white;
+	width:20%;
+	border-radius:5px;
+}	
+.box{
+	position:relative;
+	overflow: hidden;
+	width:300px;
+	height:210px;
+	display:inline-block;
+	margin-left:42.5%;
+	margin-top:20px;
+}
+.box .img-main{
+	width:100%;
+	height:100%;
+}
+.overlay-text{
+	width:100%;
+	height:100%;
+	text-align:left;
+}
+.box h2{
+	font-size:21px;
+	margin:0;
+	padding:10px 10px 0 10px;
+	color:#f1c40f;/*eror*/
+}
+.overlay-text p{
+	color:white;
+	padding:11px;
+	margin:0;
+	font-size:19px;
+}
+.more,.more:hover{
+	background: #ffffff;
+/*-color*/
+	border-radius:2px;
+	color:#858585;
+	padding:3px 7px;
+	margin:0 10px;
+	text-decoration: none;
+
+
+}
+.first .overlay{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0; right:0; bottom:0; top:0; 
+    opacity:0; 
+    background:rgba(27,27,27,.7); 
+    transition: all .3s; 
+}
+.first:hover .overlay{
+	width:100%;
+	height:100%;
+	position:absolute;
+	left:0; right:0; top:0; bottom:0; 
+    background:#444444; 
+    opacity:1; /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+    background:rgba(27,27,27,.7); /*background:rgba(27,27,27,.7);*/
+
+}
+
+.second .overlay{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:-500px;
+	background:#999999;
+	transform:all .3s;
+}
+.second:hover .overlay{
+	width:100%;
+	height:100%;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	background:#999999;
+	opacity:0.9;
+}
+
+.third .overlay{
+	transform-origin:center left;
+	transform:rotateY(131deg);
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0; bottom:0; left:0; 
+    transition: all .3s;
+}
+.third:hover .overlay{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	bottom:0;
+	right:0;
+	left:0;
+	transform:rotateY(0deg);
+	background:#444444
+}
